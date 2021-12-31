@@ -1,3 +1,4 @@
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,6 +7,10 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 
+const routesApp:Routes=[
+  {path:'', component:InicioComponent},
+  {path:'micuenta',component:MiCuentaComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +19,8 @@ import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routesApp)
   ],
   providers: [],
   bootstrap: [AppComponent]
