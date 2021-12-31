@@ -1,3 +1,4 @@
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +16,8 @@ const routesApp:Routes=[
   declarations: [
     AppComponent,
     InicioComponent,
-    MiCuentaComponent
+    MiCuentaComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
