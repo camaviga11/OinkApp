@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InicioComponent
+    InicioComponent,
+    MiCuentaComponent
   ],
   imports: [
     BrowserModule,
