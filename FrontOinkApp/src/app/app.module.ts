@@ -7,17 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import { RegistroComponent } from './registro/registro.component';
 
-const routesApp:Routes=[
-  {path:'', component:InicioComponent},
-  {path:'micuenta',component:MiCuentaComponent}
-];
+const routesApp:Routes=[];
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     MiCuentaComponent,
-    NavBarComponent
+    NavBarComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
