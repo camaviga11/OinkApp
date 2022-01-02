@@ -1,1 +1,66 @@
 <p>registro works!</p>
+<div class="fondo d-flex align-items-center justify-content-center vh-100 ">
+    <main class="container rounded shadow bg-light">
+        <div class="row">
+            <!--Lateral izquierda -->
+            <div class="col-md-6 fondo-form">
+                <h1 class="text-white text-center">Eres el mejor</h1>
+            </div>
+            <!--Lateral izquierda end-->
+            <!--Formulario login-->
+            <div class="col-md-6">
+                <div class="text-center pt-4">
+                    <img class="logo" src="../icons/controlador.png" alt="Logo formulario">
+                </div>
+                <h3 class="fw-bold text-center py-5">¡Bienvenido!</h3>
+                <div class="contact-form">
+                    <form id="contact" action="../control/registro.php" method="POST">
+                        <div class="row">
+                            <div class="mb-4">
+                                <fieldset>
+                                    <input name="nombre" type="text" class="form-control" id="name"
+                                        placeholder="Nombre" required="">
+                                </fieldset>
+                            </div>
+                            <div class="mb-4">
+                                <fieldset>
+                                    <input name="correo" type="email" class="form-control" id="email"
+                                        placeholder="Correo electrónico" required="">
+                                </fieldset>
+                            </div>
+                            <div class="mb-4">
+                                <fieldset>
+                                    <input name="contrasena" type="password" class="form-control" id="subject"
+                                        placeholder="Contraseña" required="">
+                                </fieldset>
+                            </div>
+                            <div class="mb-4">
+                                <fieldset>
+                                    <input name="repetirContrasena" type="password" class="form-control"
+                                        id="subject" placeholder="Repetir contraseña" required="">
+                                </fieldset>
+                            </div>
+                            <div class="mb-4">
+                                <input class="form-check-input" type="checkbox" name="suscrito" value="1">
+                                <label class="form-check-label" for="suscrito"> Recibir notificaciones al correo
+                                    electronico.</label>
+                            </div>
+                            <div class="mb-1">
+                                <fieldset>
+                                    <button type="submit" id="form-submit"
+                                        class="filled-button">Registrarse</button>
+                                </fieldset>
+                            </div>
+                            <div class="mb-4">
+                                <span>¿Ya tienes cuenta? <a href="login.html"><b>Iniciar sesion</b></a></span>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Formulario login end-->
+        </div>
+    </main>
+</div>
