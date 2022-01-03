@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mi-cuenta',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiCuentaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
+  //para agregar un nuevo usuario.
+  Nuevo(){
+    this.router.navigate(["nuevo"])
+  }
 
   ngOnInit(): void {
   }
