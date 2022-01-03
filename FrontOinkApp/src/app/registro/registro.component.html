@@ -1,0 +1,84 @@
+<div class="fondo d-flex align-items-center justify-content-center vh-100 fondo">
+    <div class="bg-light limon shadow rounded-3">
+        <div class="contact-form">
+            <form id="contact">
+                <div class="row mt-4">
+                    <!--Parte Izquierda-->
+                    <div class="col-sm-6">
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="nombre" type="text" class="form-control" id="id_nombre" placeholder="Nombre"
+                                    required="" />
+                            </fieldset>
+                        </div>
+                        <div class="mb-4">
+                            <select>
+                                <option selected>Tipo de documento</option>
+                                <option value="1">cedula de ciudadania</option>
+                                <option value="2">Targeta de identidad</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="fecha" type="date" class="form-control" id="id_fecha"
+                                    required="" />
+                            </fieldset>
+                        </div>
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="contrasena" type="password" class="form-control" id="subject"
+                                    placeholder="Contraseña" required="" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <!--Parte Izquierda end-->
+                    <!--Parte Derecha-->
+                    <div class="col-sm-6">
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="apellido" type="text" class="form-control" id="id_apellido" placeholder="Apellido"
+                                    required="" />
+                            </fieldset>
+                        </div>
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="documento" type="number" class="form-control" id="id_documento"
+                                    placeholder="Numero de documento" required="" />
+                            </fieldset>
+                        </div>
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="edad" type="number" class="form-control" id="id_edad"
+                                    placeholder="Edad" required="" />
+                            </fieldset>
+                        </div>
+                        <div class="mb-4">
+                            <select>
+                                <option selected>Tipo de cuenta</option>
+                                <option value="1">Cuenta ahorros</option>
+                                <option value="2">Cuenta corriente</option>
+                            </select>
+                        </div>
+
+                        
+
+                    </div>
+                    <!--Parte Derecha end-->
+                    <!--Boton-->
+                    <fieldset class="text-center mt-4">
+                        <button (click)="Go12()" type="submit" id="form-submit" class="filled-button">
+                            Registrarse
+                        </button>
+                    </fieldset>
+                    <!--Boton end-->
+                    <!--Redireccion-->
+                    <div class="mb-4 text-center">
+                        <span>¿Ya tienes cuenta?<a ><b (click)="Go12()">Iniciar sesion</b></a></span>
+                    </div>
+                    <!--Redireccion end-->
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,40 @@
+<div class="fondo d-flex align-items-center justify-content-center vh-100 fondo">
+    <div class="panel rounded-3">
+        <div class="contact-form">
+            <form id="contact">
+                <div class="row mt-5">
+                    <!--Parte Izquierda-->
+                    <div class="col">
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="cuenta" type="text" class="form-control" id="id_cuenta"
+                                    placeholder="Numero de cuenta" required=""/>
+                            </fieldset>
+                        </div>
+                        <div class="mb-4">
+                            <fieldset>
+                                <input name="clave" type="password" class="form-control" id="id_clave"
+                                    placeholder="Contraseña" required="" />
+                            </fieldset>
+                        </div>
+
+                    </div>
+                    <!--Parte Izquierda end-->
+                    <!--Boton-->
+                    <fieldset class="text-center mt-4">
+                        <button (click)="Go1()" type="submit" id="form-submit" class="filled-button">
+                            Entrar
+                        </button>
+                    </fieldset>
+                    <!--Boton end-->
+                    <!--Redireccion-->
+                    <div class="mb-4 text-center">
+                        <span>¿No tienes cuenta?<a href=""><b (click)="Go2()">Registrate</b></a></span>
+                    </div>
+                    <!--Redireccion end-->
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
