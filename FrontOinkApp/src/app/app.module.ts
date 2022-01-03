@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 import { RegistroComponent } from './registro/registro.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routesApp:Routes=[];
 @NgModule({
@@ -16,7 +17,8 @@ const routesApp:Routes=[];
     InicioComponent,
     MiCuentaComponent,
     NavBarComponent,
-    RegistroComponent
+    RegistroComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
