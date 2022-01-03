@@ -1,4 +1,3 @@
-import { FooterComponent } from './footer/footer.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
@@ -10,8 +9,7 @@ const routes: Routes = [
   {path:'', component:InicioComponent},
   {path:'micuenta',component:MiCuentaComponent},
   {path:'registro',component:RegistroComponent},
-  {path:'login',component:LoginComponent},
-  {path:'footer',component:FooterComponent}
+  {path:'login',component:LoginComponent}
 ];
 
 @NgModule({
