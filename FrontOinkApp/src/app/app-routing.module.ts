@@ -8,7 +8,8 @@ import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
 const routes: Routes = [
   {path:'', component:InicioComponent},
   {path:'micuenta',component:MiCuentaComponent},
-  {path:'registro',component:RegistroComponent}
+  {path:'registro',component:RegistroComponent},
+  {path:'login',component:LoginComponent}
 ];
 
 @NgModule({
