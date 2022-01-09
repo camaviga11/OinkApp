@@ -11,7 +11,7 @@ export class MiCuentaComponent implements OnInit {
   constructor(private router:Router) { }
   //para agregar un nuevo usuario.
   Nuevo(){
-    this.router.navigate(["nuevo"])
+    this.router.navigate(["registro"])
   }
 
   ngOnInit(): void {
