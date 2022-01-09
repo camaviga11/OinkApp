@@ -7,8 +7,9 @@ import { Persona } from './modelo/Persona';
 })
 export class TraerDatosService {
   personas:Persona[];
+  id=1;
   constructor(private http:HttpClient) { }
-  Url='http://localhost:8080/personas'
+  Url='http://localhost:8080/personas/1'
   getPersonas(){
     return this.http.get<Persona[]>(this.Url);
   }
