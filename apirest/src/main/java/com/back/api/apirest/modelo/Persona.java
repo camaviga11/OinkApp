@@ -1,22 +1,26 @@
-package com.back.api.apirest;
+package com.back.api.apirest.modelo;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
 @Table(name="personas")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Persona {
 	@Id
 	@Column
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	@Column
 	private String nombre;
 	@Column
 	private String apellido;
-	public int getId() {
+	
+	//GET & SET
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNombre() {
