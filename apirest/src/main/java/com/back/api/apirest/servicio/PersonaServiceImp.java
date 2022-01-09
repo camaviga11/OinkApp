@@ -23,7 +23,8 @@ public class PersonaServiceImp implements PersonaService{
 	public Optional<Persona> findById(Long id) {
 		return repositorio.findById(id);
 	}
-
+	
+	//Agregar un usurio nuevo
 	@Override
 	public Persona add(Persona p) {
 		
@@ -32,8 +33,7 @@ public class PersonaServiceImp implements PersonaService{
 
 	@Override
 	public Persona edit(Persona p) {
-		// TODO Auto-generated method stub
-		return null;
+		return repositorio.save(p);
 	}
 
 	@Override

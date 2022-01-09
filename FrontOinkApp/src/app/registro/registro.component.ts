@@ -1,5 +1,7 @@
+import { Persona } from './../modelo/Persona';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TraerDatosService } from '../traer-datos.service';
 
 @Component({
   selector: 'app-registro',
@@ -8,9 +10,20 @@ import { Router } from '@angular/router';
 })
 export class RegistroComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  persona:Persona=new Persona();
+  constructor(private router:Router, private userService:TraerDatosService) { }
 
   ngOnInit(): void {
+  }
+  //Boton que captura los datos de registro.
+  Registrarse(){
+    this.userService.createPersona(this.persona)
+    .subscribe(data=>{
+      alert("Se agrego con exito..");
+      this.router.navigate(["micuenta"]);
+      console.log(data);
+    })
+    alert("xxxx");
   }
   //leva al inicio
   Go12(){
